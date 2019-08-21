@@ -28,8 +28,9 @@
     "temperature"
   ],
   "author": {
+    "email": "schrjos@gmail.com",
     "name": "Joey Schroeder",
-    "email": "schrjos@gmail.com"
+    "url": "http://joeyschroeder.com"
   },
   "license": "MIT",
   "homepage": "https://github.com/joeyschroeder/temperature-util",

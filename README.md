@@ -1,17 +1,17 @@
-[![npm](https://img.shields.io/npm/v/temperature-conversions.svg)](https://www.npmjs.com/package/temperature-conversions)
-[![npm downloads](https://img.shields.io/npm/dt/temperature-conversions.svg)](https://www.npmjs.com/package/temperature-conversions)
+[![npm](https://img.shields.io/npm/v/temperature-util.svg)](https://www.npmjs.com/package/temperature-util)
+[![npm downloads](https://img.shields.io/npm/dt/temperature-util.svg)](https://www.npmjs.com/package/temperature-util)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/temperature-conversions.svg)](https://github.com/joeyschroeder/temperature-conversions/issues)
-[![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/temperature-conversions.svg)](https://github.com/joeyschroeder/temperature-conversions/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/temperature-util.svg)](https://github.com/joeyschroeder/temperature-util/issues)
+[![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/temperature-util.svg)](https://github.com/joeyschroeder/temperature-util/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Dependency status](https://david-dm.org/joeyschroeder/temperature-conversions/status.svg)](https://david-dm.org/joeyschroeder/temperature-conversions/)
-[![devDependency status](https://david-dm.org/joeyschroeder/temperature-conversions/dev-status.svg)](https://david-dm.org/joeyschroeder/temperature-conversions/?type=dev)
+[![Dependency status](https://david-dm.org/joeyschroeder/temperature-util/status.svg)](https://david-dm.org/joeyschroeder/temperature-util/)
+[![devDependency status](https://david-dm.org/joeyschroeder/temperature-util/dev-status.svg)](https://david-dm.org/joeyschroeder/temperature-util/?type=dev)
 
 # 🌈 temperature-util
 A dependency-free library of temperature conversion functions, format utilities, and constants.
 
 ## Installation
-`npm install temperature-conversions --save`
+`npm install temperature-util --save`
 
 ## Usage
 
@@ -78,15 +78,15 @@ import {
 ```
 
 ## Versioning
-I use [SemVer](https://docs.npmjs.com/getting-started/semantic-versioning) for versioning. For the versions available, see the [tags on this repository](https://github.com/joeyschroeder/temperature-conversions/tags).
+I use [SemVer](https://docs.npmjs.com/getting-started/semantic-versioning) for versioning. For the versions available, see the [tags on this repository](https://github.com/joeyschroeder/temperature-util/tags).
 
 ## Authors
 * **Joey Schroeder** - *Initial work* - [joeyschroeder.com](https://joeyschroeder.com)
 
-See also the list of [contributors](https://github.com/joeyschroeder/temperature-conversions/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/joeyschroeder/temperature-util/graphs/contributors) who participated in this project.
 
 ## Contributing
-Please submit a pull request with any features/fixes for the project. I apologize in advance for the slow action on pull requests and issues. Please follow the [ESLint rules](https://github.com/joeyschroeder/temperature-conversions/blob/master/.eslintrc.json) for the project.
+Please submit a pull request with any features/fixes for the project. I apologize in advance for the slow action on pull requests and issues. Please follow the [ESLint rules](https://github.com/joeyschroeder/temperature-util/blob/master/.eslintrc.json) for the project.
 
 ## To-Dos
 In the future, it's hoped this library includes:

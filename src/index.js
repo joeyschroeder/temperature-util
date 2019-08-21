@@ -14,6 +14,7 @@ import { FREEZING_POINT_OF_WATER_CELSIUS } from './constants/freezing-point-of-w
 import { ABSOLUTE_ZERO_IN_CELSIUS } from './constants/absolute-zero-in-celsius';
 import { AVERAGE_HUMAN_BODY_TEMPERATURE_IN_CELSIUS } from './constants/average-human-body-temperature-in-celsius';
 import { SURFACE_OF_THE_SUN_IN_CELSIUS } from './constants/surface-of-the-sun-in-celsius';
+import { convertTemperature } from './convert-temperature/convert-temperature';
 
 export {
   ABSOLUTE_ZERO_IN_CELSIUS,
@@ -24,6 +25,7 @@ export {
   celsiusToFahrenheit,
   celsiusToKelvin,
   celsiusToRankine,
+  convertTemperature,
   fahrenheitToCelsius,
   fahrenheitToKelvin,
   fahrenheitToRankine,

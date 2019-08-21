@@ -4,6 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/temperature-util.svg)](https://github.com/joeyschroeder/temperature-util/issues)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/temperature-util.svg)](https://github.com/joeyschroeder/temperature-util/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![Dependency status](https://david-dm.org/joeyschroeder/temperature-util/status.svg)](https://david-dm.org/joeyschroeder/temperature-util/)
 [![devDependency status](https://david-dm.org/joeyschroeder/temperature-util/dev-status.svg)](https://david-dm.org/joeyschroeder/temperature-util/?type=dev)
 
@@ -16,9 +17,26 @@ A dependency-free library of temperature conversion functions, format utilities,
 ## Usage
 
 ### Conversion Functions
-This library includes functions to convert any Celsius, Fahrenheit, Kelvin, or Rankine temperature to any other temperature measurement.  Simply import a conversion function from this library and pass any `number`-type parameter to the function to return the converted `number`-type result.
+This library includes functions to convert any Celsius, Fahrenheit, Kelvin, or Rankine temperature to any other temperature measurement.
 
-#### Example
+#### `convertTemperature`
+There is a flexible conversion function `convertTemperature`, which accepts a `number`-type temperature, a "from" temperature measurement, and a "to" temperature measurement, then returns a `number`-type result.
+
+###### Example
+```
+import { convertTemperature } from 'temperature-util';
+
+const celsiusTemperature = 0;
+const fromMeasurement = 'celsius';
+const toMeasurement = 'fahrenheit';
+
+const fahrenheitTemperature = convertTemperature(celsiusTemperature, fromMeasurement, toMeasurement); // 32
+```
+
+##### Direct Conversion Functions
+There is additionally direct functions to convert any `number`-type temperature to an other temperature measurement abbreviation. Simply import a conversion function from this library and pass any `number`-type parameter to the function to return the converted `number`-type result.
+
+###### Example
 ```
 import { celsiusToFahrenheit, celsiusToKelvin, celsiusToRankine } from 'temperature-util';
 
@@ -29,7 +47,7 @@ const kelvinTemperature = celsiusToKelvin(celsius); // 273.15
 const rankineTemperature = celsiusToRankine(celsius); // 491.67
 ```
 
-#### Available Conversion Functions
+###### Available Conversion Functions
 The following functions all take a single `number`-type parameter and return a `number`:
 
 * **celsiusToFahrenheit**(celsius: *number*) *number*
@@ -69,7 +87,12 @@ There is additionally direct functions to append any `string` or `number`-type t
 
 ###### Example
 ```
-import { formatToCelsius, formatToFahrenheit, formatToKelvin, formatToRankine } from 'temperature-util';
+import {
+  formatToCelsius,
+  formatToFahrenheit,
+  formatToKelvin,
+  formatToRankine
+} from 'temperature-util';
 
 const temperature = 0;
 
@@ -109,7 +132,7 @@ In the future, it's hoped this library includes:
 * Delisle temperature conversion functions and formats
 * Newton temperature conversion functions and formats
 * Réaumur temperature conversion functions and formats
-* Rømer temperatuer conversion functions and formats
+* Rømer temperature conversion functions and formats
 
 ## License
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details.

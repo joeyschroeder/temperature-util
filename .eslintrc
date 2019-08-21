@@ -1,12 +1,17 @@
+
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "babel-eslint",
+  "plugins": [
+    "jest"
+  ],
   "rules": {
     "comma-dangle": 0,
     "import/no-extraneous-dependencies": [0],

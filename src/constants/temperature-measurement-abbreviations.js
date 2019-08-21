@@ -1,0 +1,6 @@
+export const TEMPERATURE_MEASUREMENT_ABBREVIATIONS = {
+  CELSIUS: '°C',
+  FAHRENHEIT: '°F',
+  KELVIN: 'K',
+  RANKINE: '°R'
+};

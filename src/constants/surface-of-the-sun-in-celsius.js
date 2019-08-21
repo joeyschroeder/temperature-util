@@ -1,0 +1,1 @@
+export const SURFACE_OF_THE_SUN_IN_CELSIUS = 5500;

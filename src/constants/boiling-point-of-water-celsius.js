@@ -1,0 +1,1 @@
+export const BOILING_POINT_OF_WATER_CELSIUS = 99.9839;

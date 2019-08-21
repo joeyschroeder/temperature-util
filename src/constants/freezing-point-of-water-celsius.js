@@ -1,0 +1,1 @@
+export const FREEZING_POINT_OF_WATER_CELSIUS = 0;

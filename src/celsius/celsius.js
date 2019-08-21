@@ -1,0 +1,41 @@
+/**
+ * This function converts a temperature in Celsius to Fahrenheit.
+ *
+ * @param {number} celsius - a temperature in Celsius
+ * @return {number} the Celsius temperature converted to Fahrenheit
+ *
+ * @example
+ *   celsiusToFahrenheit(100)
+ */
+export const celsiusToFahrenheit = celsius => {
+  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  return celsius * (9 / 5) + 32;
+};
+
+/**
+ * This function converts a temperature in Celsius to Kelvin.
+ *
+ * @param {number} celsius - a temperature in Celsius
+ * @return {number} the Celsius temperature converted to Kelvin
+ *
+ * @example
+ *   celsiusToKelvin(100)
+ */
+export const celsiusToKelvin = celsius => {
+  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  return celsius + 273.15;
+};
+
+/**
+ * This function converts a temperature in Celsius to Rankine.
+ *
+ * @param {number} celsius - a temperature in Celsius
+ * @return {number} the Celsius temperature converted to Rankine
+ *
+ * @example
+ *   celsiusToRankine(100)
+ */
+export const celsiusToRankine = celsius => {
+  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  return celsius * (9 / 5) + 491.67;
+};

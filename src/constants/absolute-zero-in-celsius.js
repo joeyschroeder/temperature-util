@@ -1,0 +1,1 @@
+export const ABSOLUTE_ZERO_IN_CELSIUS = -273.15;

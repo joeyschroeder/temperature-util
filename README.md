@@ -7,7 +7,7 @@
 [![Dependency status](https://david-dm.org/joeyschroeder/temperature-util/status.svg)](https://david-dm.org/joeyschroeder/temperature-util/)
 [![devDependency status](https://david-dm.org/joeyschroeder/temperature-util/dev-status.svg)](https://david-dm.org/joeyschroeder/temperature-util/?type=dev)
 
-# 🌈 temperature-util
+# 🌡️ temperature-util
 A dependency-free library of temperature conversion functions, format utilities, and constants.
 
 ## Installation
@@ -49,9 +49,25 @@ The following functions all take a single `number`-type parameter and return a `
 * **rankineToKelvin**(rankine: *number*) *number*
 
 ### Formatting Functions
-This library includes functions to append any `string` or `number`-type temperature with a temperature measurement abbreviation.  Simply import a formatting function from this library and pass any `string` or `number`-type parameter to the function to return the converted `string`-type result.
+This library includes functions to append any `string` or `number`-type temperature with a temperature measurement abbreviation.
 
-#### Example
+#### `formatTemperature`
+There is a flexible format function `formatTemperature`, which accepts a temperature any `string` or `number`-type temperature and a temperature measurement and returns a `string`-type result.
+
+##### Example
+```
+import { formatTemperature } from 'temperature-util';
+
+const temperature = 0;
+const measurement = 'celsius';
+
+const celsiusTemperature = formatTemperature(temperature, measurement); // 0 °C
+```
+
+##### Direct Formatting Functions
+There is additionally direct functions to append any `string` or `number`-type temperature with a temperature measurement abbreviation.  Simply import a formatting function from this library and pass any `string` or `number`-type parameter to the function to return the converted `string`-type result.
+
+###### Example
 ```
 import { formatToCelsius, formatToFahrenheit, formatToKelvin, formatToRankine } from 'temperature-util';
 
@@ -93,7 +109,7 @@ In the future, it's hoped this library includes:
 * Delisle temperature conversion functions and formats
 * Newton temperature conversion functions and formats
 * Réaumur temperature conversion functions and formats
-* Rømer temperatuer converation functions and formats
+* Rømer temperatuer conversion functions and formats
 
 ## License
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details.

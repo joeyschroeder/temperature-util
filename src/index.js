@@ -2,7 +2,13 @@ import { celsiusToFahrenheit, celsiusToKelvin, celsiusToRankine } from './celsiu
 import { fahrenheitToCelsius, fahrenheitToKelvin, fahrenheitToRankine } from './fahrenheit/fahrenheit';
 import { kelvinToCelsius, kelvinToFahrenheit, kelvinToRankine } from './kelvin/kelvin';
 import { rankineToCelsius, rankineToFahrenheit, rankineToKelvin } from './rankine/rankine';
-import { formatToCelsius, formatToFahrenheit, formatToKelvin, formatToRankine } from './format/format';
+import {
+  formatToCelsius,
+  formatToFahrenheit,
+  formatToKelvin,
+  formatToRankine,
+  formatTemperature
+} from './format/format';
 import { BOILING_POINT_OF_WATER_CELSIUS } from './constants/boiling-point-of-water-celsius';
 import { FREEZING_POINT_OF_WATER_CELSIUS } from './constants/freezing-point-of-water-celsius';
 import { ABSOLUTE_ZERO_IN_CELSIUS } from './constants/absolute-zero-in-celsius';
@@ -21,6 +27,7 @@ export {
   fahrenheitToCelsius,
   fahrenheitToKelvin,
   fahrenheitToRankine,
+  formatTemperature,
   formatToCelsius,
   formatToFahrenheit,
   formatToKelvin,

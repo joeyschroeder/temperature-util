@@ -1,7 +1,9 @@
+import { TEMPERATURE_MEASUREMENTS } from '../constants/temperature-measurements';
+
 /**
  * This function appends a temperature with the Celsius temperature measurement abbreviation.
  *
- * @param {number} celsius - a temperature in Celsius
+ * @param {number|string} celsius - a temperature in Celsius
  * @return {string} the Celsius temperature appended with the Celsius temperature abbreviation
  *
  * @example
@@ -14,7 +16,7 @@ export const formatToCelsius = celsius => {
 /**
  * This function appends a temperature with the Fahrenheit temperature measurement abbreviation.
  *
- * @param {number} fahrenheit - a temperature in Fahrenheit
+ * @param {number|string} fahrenheit - a temperature in Fahrenheit
  * @return {string} the Fahrenheit temperature appended with the Fahrenheit temperature abbreviation
  *
  * @example
@@ -27,7 +29,7 @@ export const formatToFahrenheit = fahrenheit => {
 /**
  * This function appends a temperature with the Kelvin temperature measurement abbreviation.
  *
- * @param {number} kelvin - a temperature in Kelvin
+ * @param {number|string} kelvin - a temperature in Kelvin
  * @return {string} the Kelvin temperature appended with the Kelvin temperature abbreviation
  *
  * @example
@@ -40,7 +42,7 @@ export const formatToKelvin = kelvin => {
 /**
  * This function appends a temperature with the Rankine temperature measurement abbreviation.
  *
- * @param {number} rankine - a temperature in Rankine
+ * @param {number|string} rankine - a temperature in Rankine
  * @return {string} the Rankine temperature appended with the Rankine temperature abbreviation
  *
  * @example
@@ -48,4 +50,35 @@ export const formatToKelvin = kelvin => {
  */
 export const formatToRankine = rankine => {
   return `${rankine} °R`;
+};
+
+/**
+ * This function appends a temperature with the Rankine temperature measurement abbreviation.
+ *
+ * @param {number|string} temperature - a temperature
+ * @param {string} measurement - a temperature measurement
+ * @return {string} the temperature appended with the temperature measurement abbreviation
+ *
+ * @example
+ *   formatTemperature(100, 'celsius')
+ */
+export const formatTemperature = (temperature, measurement = TEMPERATURE_MEASUREMENTS.CELSIUS) => {
+  if (typeof temperature !== 'number' || typeof temperature !== 'string') {
+    console.error('No temperature parameter.');
+    return '';
+  }
+
+  switch (measurement) {
+    case TEMPERATURE_MEASUREMENTS.CELSIUS:
+      return formatToCelsius(temperature);
+    case TEMPERATURE_MEASUREMENTS.FAHRENHEIT:
+      return formatToFahrenheit(temperature);
+    case TEMPERATURE_MEASUREMENTS.KELVIN:
+      return formatToKelvin(temperature);
+    case TEMPERATURE_MEASUREMENTS.RANKINE:
+      return formatToRankine(temperature);
+    default:
+      console.error('Measurement parameter is invalid.');
+      return temperature;
+  }
 };

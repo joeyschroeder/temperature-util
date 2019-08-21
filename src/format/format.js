@@ -8,7 +8,6 @@
  *   formatToCelsius(100)
  */
 export const formatToCelsius = celsius => {
-  if (typeof celsius !== 'number' || typeof celsius !== 'string') throw new Error('Parameter is not a number.');
   return `${celsius} °C`;
 };
 
@@ -22,7 +21,6 @@ export const formatToCelsius = celsius => {
  *   formatToCelsius(100)
  */
 export const formatToFahrenheit = fahrenheit => {
-  if (typeof fahrenheit !== 'number' || typeof fahrenheit !== 'string') throw new Error('Parameter is not a number.');
   return `${fahrenheit} °F`;
 };
 
@@ -36,7 +34,6 @@ export const formatToFahrenheit = fahrenheit => {
  *   formatToKelvin(100)
  */
 export const formatToKelvin = kelvin => {
-  if (typeof kelvin !== 'number' || typeof kelvin !== 'string') throw new Error('Parameter is not a number.');
   return `${kelvin} K`;
 };
 
@@ -50,6 +47,5 @@ export const formatToKelvin = kelvin => {
  *   formatToRankine(100)
  */
 export const formatToRankine = rankine => {
-  if (typeof rankine !== 'number' || typeof rankine !== 'string') throw new Error('Parameter is not a number.');
   return `${rankine} °R`;
 };

@@ -88,6 +88,13 @@ See also the list of [contributors](https://github.com/joeyschroeder/temperature
 ## Contributing
 Please submit a pull request with any features/fixes for the project. I apologize in advance for the slow action on pull requests and issues. Please follow the [ESLint rules](https://github.com/joeyschroeder/temperature-conversions/blob/master/.eslintrc.json) for the project.
 
+## To-Dos
+In the future, it's hoped this library includes:
+* Delisle temperature conversion functions and formats
+* Newton temperature conversion functions and formats
+* Réaumur temperature conversion functions and formats
+* Rømer temperatuer converation functions and formats
+
 ## License
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details.
 

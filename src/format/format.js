@@ -1,4 +1,5 @@
 import { TEMPERATURE_MEASUREMENTS } from '../constants/temperature-measurements';
+import { TEMPERATURE_MEASUREMENT_ABBREVIATIONS } from '../constants/temperature-measurement-abbreviations';
 
 /**
  * This function appends a temperature with the Celsius temperature measurement abbreviation.
@@ -10,7 +11,7 @@ import { TEMPERATURE_MEASUREMENTS } from '../constants/temperature-measurements'
  *   formatToCelsius(100)
  */
 export const formatToCelsius = celsius => {
-  return `${celsius} °C`;
+  return `${celsius} ${TEMPERATURE_MEASUREMENT_ABBREVIATIONS.CELSIUS}`;
 };
 
 /**
@@ -23,7 +24,7 @@ export const formatToCelsius = celsius => {
  *   formatToCelsius(100)
  */
 export const formatToFahrenheit = fahrenheit => {
-  return `${fahrenheit} °F`;
+  return `${fahrenheit} ${TEMPERATURE_MEASUREMENT_ABBREVIATIONS.FAHRENHEIT}`;
 };
 
 /**
@@ -36,7 +37,7 @@ export const formatToFahrenheit = fahrenheit => {
  *   formatToKelvin(100)
  */
 export const formatToKelvin = kelvin => {
-  return `${kelvin} K`;
+  return `${kelvin} ${TEMPERATURE_MEASUREMENT_ABBREVIATIONS.KELVIN}`;
 };
 
 /**
@@ -49,7 +50,7 @@ export const formatToKelvin = kelvin => {
  *   formatToRankine(100)
  */
 export const formatToRankine = rankine => {
-  return `${rankine} °R`;
+  return `${rankine} ${TEMPERATURE_MEASUREMENT_ABBREVIATIONS.RANKINE}`;
 };
 
 /**
@@ -63,8 +64,8 @@ export const formatToRankine = rankine => {
  *   formatTemperature(100, 'celsius')
  */
 export const formatTemperature = (temperature, measurement = TEMPERATURE_MEASUREMENTS.CELSIUS) => {
-  if (typeof temperature !== 'number' || typeof temperature !== 'string') {
-    console.error('No temperature parameter.');
+  if (typeof temperature !== 'number' && typeof temperature !== 'string') {
+    console.error('Temperature parameter is invalid.');
     return '';
   }
 

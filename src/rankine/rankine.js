@@ -8,7 +8,11 @@
  *   rankineToCelsius(100)
  */
 export const rankineToCelsius = rankine => {
-  if (typeof rankine !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof rankine !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return rankine * (5 / 9) - 273.15;
 };
 
@@ -22,7 +26,11 @@ export const rankineToCelsius = rankine => {
  *   rankineToFahrenheit(100)
  */
 export const rankineToFahrenheit = rankine => {
-  if (typeof rankine !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof rankine !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return rankine - 459.57;
 };
 
@@ -36,6 +44,10 @@ export const rankineToFahrenheit = rankine => {
  *   rankineToKelvin(100)
  */
 export const rankineToKelvin = rankine => {
-  if (typeof rankine !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof rankine !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return rankine * (5 / 9);
 };

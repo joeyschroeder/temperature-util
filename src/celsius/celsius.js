@@ -8,7 +8,11 @@
  *   celsiusToFahrenheit(100)
  */
 export const celsiusToFahrenheit = celsius => {
-  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof celsius !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return celsius * (9 / 5) + 32;
 };
 
@@ -22,7 +26,11 @@ export const celsiusToFahrenheit = celsius => {
  *   celsiusToKelvin(100)
  */
 export const celsiusToKelvin = celsius => {
-  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof celsius !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return celsius + 273.15;
 };
 
@@ -36,6 +44,10 @@ export const celsiusToKelvin = celsius => {
  *   celsiusToRankine(100)
  */
 export const celsiusToRankine = celsius => {
-  if (typeof celsius !== 'number') throw new Error('Parameter is not a number.');
+  if (typeof celsius !== 'number') {
+    console.error('Parameter is not a number.');
+    return undefined;
+  }
+
   return celsius * (9 / 5) + 491.67;
 };

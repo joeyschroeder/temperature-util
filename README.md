@@ -14,6 +14,18 @@ A dependency-free library of temperature conversion functions, format utilities,
 ## Installation
 `npm install temperature-util --save`
 
+## Quick Start
+This library contains multiple temperature measurement conversion functions, temperature abbreviation formatting functions, and temperature contants detailed in the **Usage** section below.  However, the simplest implementation of this library is with the `convertTemperature` and `formatTemperature` functions.
+
+Simply import `convertTemperature` and `formatTemperature` from `temperature-util`, and use them as follows:
+```
+import { convertTemperature, formatTemperature } from `temperature-util`;
+
+const celsiusTemp = 0;
+const fahrenheitTemp = convertTemperature(celsiusTemp, 'celsius', 'fahrenheit); // 32
+const formattedTemp = formatTemperature(fahreheitTemp, 'fahrenheit'); // 32 °F
+```
+
 ## Usage
 
 ### Conversion Functions

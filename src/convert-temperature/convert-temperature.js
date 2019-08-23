@@ -13,7 +13,8 @@ import { rankineToCelsius, rankineToFahrenheit, rankineToKelvin } from '../ranki
  * @return {number} the value param converted from the fromMeasurement param to the toMeasurement param
  *
  * @example
- *   convertTemperature(100, 'celsius', 'fahrenheit');
+ * convertTemperature(0, 'celsius', 'fahrenheit');
+ * // => 32
  */
 export const convertTemperature = (
   temperature,

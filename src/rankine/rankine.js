@@ -5,7 +5,7 @@
  * @return {number} the Rankine temperature converted to Celsius
  *
  * @example
- *   rankineToCelsius(100)
+ * rankineToCelsius(100); // => -217.59444...
  */
 export const rankineToCelsius = rankine => {
   if (typeof rankine !== 'number') {
@@ -23,7 +23,7 @@ export const rankineToCelsius = rankine => {
  * @return {number} the Rankine temperature converted to Fahrenheit
  *
  * @example
- *   rankineToFahrenheit(100)
+ * rankineToFahrenheit(100); // => -359.57
  */
 export const rankineToFahrenheit = rankine => {
   if (typeof rankine !== 'number') {
@@ -41,7 +41,7 @@ export const rankineToFahrenheit = rankine => {
  * @return {number} the Rankine temperature converted to Kelvin
  *
  * @example
- *   rankineToKelvin(100)
+ * rankineToKelvin(100); // => 55.555...
  */
 export const rankineToKelvin = rankine => {
   if (typeof rankine !== 'number') {

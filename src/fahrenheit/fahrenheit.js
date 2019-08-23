@@ -5,7 +5,7 @@
  * @return {number} the Fahrenheit temperature converted to Celsius
  *
  * @example
- *   fahrenheitToCelsius(100)
+ * fahrenheitToCelsius(32); // => 0
  */
 export const fahrenheitToCelsius = fahrenheit => {
   if (typeof fahrenheit !== 'number') {
@@ -23,7 +23,7 @@ export const fahrenheitToCelsius = fahrenheit => {
  * @return {number} the Fahrenheit temperature converted to Kelvin
  *
  * @example
- *   fahrenheitToKelvin(100)
+ * fahrenheitToKelvin(100); // => 310.92777...
  */
 export const fahrenheitToKelvin = fahrenheit => {
   if (typeof fahrenheit !== 'number') {
@@ -41,7 +41,7 @@ export const fahrenheitToKelvin = fahrenheit => {
  * @return {number} the Fahrenheit temperature converted to Rankine
  *
  * @example
- *   fahrenheitToRankine(100)
+ * fahrenheitToRankine(100); // => 559.67
  */
 export const fahrenheitToRankine = fahrenheit => {
   if (typeof fahrenheit !== 'number') {

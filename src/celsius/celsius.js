@@ -5,7 +5,7 @@
  * @return {number} the Celsius temperature converted to Fahrenheit
  *
  * @example
- *   celsiusToFahrenheit(100)
+ * celsiusToFahrenheit(0); // => 32
  */
 export const celsiusToFahrenheit = celsius => {
   if (typeof celsius !== 'number') {
@@ -23,7 +23,7 @@ export const celsiusToFahrenheit = celsius => {
  * @return {number} the Celsius temperature converted to Kelvin
  *
  * @example
- *   celsiusToKelvin(100)
+ * celsiusToKelvin(0); // => 273.15
  */
 export const celsiusToKelvin = celsius => {
   if (typeof celsius !== 'number') {
@@ -41,7 +41,7 @@ export const celsiusToKelvin = celsius => {
  * @return {number} the Celsius temperature converted to Rankine
  *
  * @example
- *   celsiusToRankine(100)
+ * celsiusToRankine(0); // => 491.67
  */
 export const celsiusToRankine = celsius => {
   if (typeof celsius !== 'number') {

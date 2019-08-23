@@ -5,7 +5,7 @@
  * @return {number} the Kelvin temperature converted to Celsius
  *
  * @example
- *   kelvinToCelsius(100)
+ * kelvinToCelsius(100); // => -173.15
  */
 export const kelvinToCelsius = kelvin => {
   if (typeof kelvin !== 'number') {
@@ -23,7 +23,7 @@ export const kelvinToCelsius = kelvin => {
  * @return {number} the Kelvin temperature converted to Fahrenheit
  *
  * @example
- *   kelvinToFahrenheit(100)
+ * kelvinToFahrenheit(100); // => -279.67
  */
 export const kelvinToFahrenheit = kelvin => {
   if (typeof kelvin !== 'number') {
@@ -41,7 +41,7 @@ export const kelvinToFahrenheit = kelvin => {
  * @return {number} the Kelvin temperature converted to Rankine
  *
  * @example
- *   kelvinToRankine(100)
+ * kelvinToRankine(100); // => 180
  */
 export const kelvinToRankine = kelvin => {
   if (typeof kelvin !== 'number') {

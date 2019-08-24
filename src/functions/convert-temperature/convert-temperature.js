@@ -1,8 +1,8 @@
-import { TEMPERATURE_MEASUREMENTS } from '../constants/temperature-measurements';
-import { celsiusToFahrenheit, celsiusToKelvin, celsiusToRankine } from '../celsius/celsius';
-import { fahrenheitToCelsius, fahrenheitToKelvin, fahrenheitToRankine } from '../fahrenheit/fahrenheit';
-import { kelvinToCelsius, kelvinToFahrenheit, kelvinToRankine } from '../kelvin/kelvin';
-import { rankineToCelsius, rankineToFahrenheit, rankineToKelvin } from '../rankine/rankine';
+import { TEMPERATURE_MEASUREMENTS } from 'constants/temperature-measurements';
+import { celsiusToFahrenheit, celsiusToKelvin, celsiusToRankine } from 'functions/celsius/celsius';
+import { fahrenheitToCelsius, fahrenheitToKelvin, fahrenheitToRankine } from 'functions/fahrenheit/fahrenheit';
+import { kelvinToCelsius, kelvinToFahrenheit, kelvinToRankine } from 'functions/kelvin/kelvin';
+import { rankineToCelsius, rankineToFahrenheit, rankineToKelvin } from 'functions/rankine/rankine';
 
 /**
  * This function converts a temperature from one measurement to another.

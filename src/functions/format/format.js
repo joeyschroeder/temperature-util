@@ -1,5 +1,5 @@
-import { TEMPERATURE_MEASUREMENTS } from '../constants/temperature-measurements';
-import { TEMPERATURE_MEASUREMENT_ABBREVIATIONS } from '../constants/temperature-measurement-abbreviations';
+import { TEMPERATURE_MEASUREMENTS } from 'constants/temperature-measurements';
+import { TEMPERATURE_MEASUREMENT_ABBREVIATIONS } from 'constants/temperature-measurement-abbreviations';
 
 /**
  * This function appends a temperature with the Celsius temperature measurement abbreviation.

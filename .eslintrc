@@ -23,5 +23,16 @@
     "jsx-a11y/no-static-element-interactions": [0],
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "alias": {
+          "constants": "./src/constants",
+          "function": "./src/function",
+          "util": "./src/util"
+        }
+      }
+    }
   }
 }
